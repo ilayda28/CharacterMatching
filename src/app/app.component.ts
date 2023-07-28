@@ -13,8 +13,9 @@ export class AppComponent {
 
   getInputValue(value: string)
   {
+    console.log(this.randomText.split(''));
     this.enteredText=value;
-    console.log(value)
+
   }
 
 }
