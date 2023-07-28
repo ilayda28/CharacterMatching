@@ -9,5 +9,12 @@ import {lorem} from 'faker';
 export class AppComponent {
 
   randomText= lorem.sentence();
-  title = 'CharacterMatching';
+  enteredText= '';
+
+  getInputValue(value: string)
+  {
+    this.enteredText=value;
+    console.log(value)
+  }
+
 }
